@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0057)http://www.zuidaima.com/html/1695882735602688/index.html# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>我爱你</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="./default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./garden.js"></script>
+<script type="text/javascript" src="./functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content" style="width: 1110px; height: 625px; margin-top: 177px; margin-left: 405px;">
+		<div id="code" style="margin-top: 112.5px;">
+			<span class="comments">/**</span><br>
+			<span class="space"><span class="comments">*2017—06-08,</span><br>
+			<span class="space"><span class="comments">*2017-07-19.</span><br>
+			<span class="space"><span class="comments">*/</span><br>
+			Boy name = <span class="keyword">Mr</span> 李镇<br>
+			Girl name = <span class="keyword">Mrs</span>徐庆宣<br>
+			<span class="comments">能够遇见你，对我来说是最大的幸福。</span><br>
+			<span class="comments">有了你，我的生活变的绚丽多彩，</span><br>
+			<span class="comments">有了你，世界变得如此迷人。</span><br>
+			<span class="comments">你是我的世界，我的世界是你。</span><br>
+			<br>
+			<span class="comments">我愿意用自己的一生，好好的陪着你，爱着你。</span><br>
+			<span class="comments">陪你到你想去的地方，用心走完我们人生的余下的旅程。</span><br>
+			 <br>
+			<span class="comments">在未来的日子里，也许什么都无法确定，</span><br>
+			<span class="comments">但唯一可以确定的是，我爱的人是你，无论现在还是将来，</span><br>
+			<span class="comments">我想我这里都会是你最温暖的港湾，都是为你遮风避雨的城墙。</span><br>
+			<span class="comments">无论狂风，无论暴雨。</span><br>
+			<span class="comments">我都会陪在你的身旁，让你不会感到丝毫的担心和惶恐。</span><br>
+			<br>
+			<span class="comments">我会珍惜和你在一起的每一刻，每一分，每一秒。</span><br>
+			<span class="comments">谁叫你是我最爱的人，</span><br>
+			<span class="comments">谁叫你是第二幸福的人（因为爱上她你是最幸福的了，哈哈）。</span><br>
+			<span class="comments">为了你，</span><br>
+			<span class="comments">我愿用自己的双手为你撑起一片艳阳！</span><br>
+			<br>
+			<span class="comments"></span><br>
+			<br>
+			<br>
+			I want to say:<br>
+			Baby, I love you forever;<br>
+		</span></span></span></span></span></span></div>
+		<div id="loveHeart">
+			<canvas id="garden" width="670" height="625"></canvas>
+			<div id="words" style="position: absolute; top: 372px; left: 915px;">
+				<div id="messages" style="display: block;">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"><span class="digit">1456</span> days <span class="digit">17</span> hours <span class="digit">58</span> minutes <span class="digit">12</span> seconds</div>
+				</div>
+				<div id="loveu" style="display: block;">
+					爱你直到永永远远。<br>
+					<div class="signature">- 镇镇</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<a href="https://user.qzone.qq.com/532560004/infocenter?ptsig=T2X4c4c3uAoW0FQ6egZC-fntoIPfrwv*roo6g7LNBv0_">Mr...</a><br>
+		<a href="https://user.qzone.qq.com/1911603447/share/?ptlang=2052&source=friendsign">Mrs...</a><br>
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2017, 02, 25);
+together.setHours(20);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+
+</body></html>
